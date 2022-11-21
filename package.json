@@ -1,0 +1,19 @@
+{
+  "name": "web_prog_project_uts-main",
+  "version": "1.0.0",
+  "description": "NodeJS",
+  "main": "backproses.js",
+  "scripts": {
+    "start": "node backproses.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kel 10",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "chalk": "^4.1.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "validator": "^13.7.0"
+  }
+}

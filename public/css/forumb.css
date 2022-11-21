@@ -1,0 +1,235 @@
+.table-head{
+    display: flex;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+html {
+    scroll-behavior: smooth;
+    animation: backInUp;
+    animation-duration: 1s;
+}
+
+.table-head div{
+    padding: 5px;
+    margin: 2px;
+    background-color: #BEAFC2;
+    font-weight: bold;
+    opacity: 65%;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+.table-head .status{
+    flex: 5%;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+.table-head .subjects{
+    flex: 70%;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+.table-head .replies{
+    flex: 10%;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+.table-head .last-reply{
+    flex: 15%;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+
+
+.table-row{
+    display: flex;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+.table-row .status, .table-row .subjects, .table-row .replies, .table-row .last-reply{
+    padding: 5px;
+    margin: 2px;
+    background-color:#BEAFC2;
+    opacity: 65%;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+.table-row .status{
+    flex: 5%;
+    font-size: 30px;
+    text-align: center;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+.table-row .subjects{
+    flex: 70%;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+.table-row .replies{
+    flex: 10%;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+.table-row .last-reply{
+    flex: 15%;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+
+.navigate{
+    margin-block: 20px;
+    font-weight: lighter;
+    font-size: 24px;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+.navigate a{
+    color: #BEAFC2;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+.navigate a:hover{
+    color:#BEAFC2;
+    font-weight: bolder;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+body{
+    background-image: url('purple.gif');
+    background-size: cover;
+    
+    
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+.navbar{
+    display: flex;
+    padding-top: 9px;
+    animation: slideInLeft;
+    animation-duration: 3s;
+    
+}
+
+.navbars:hover {
+    font-size: 16px;
+    transition: 0.7s;
+    animation: slideInLeft;
+    animation-duration: 3s;
+}
+
+
+
+.search-box select{
+    padding: 10px;
+    background-color:#BEAFC2;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+.search-box input{
+    padding: 10px;
+    background-color:#BEAFC2;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+.search-box button{
+    padding: 10px;
+    background-color:#BEAFC2;
+    color:#000000;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+
+header{
+    margin-inline: 10px;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+.navigation{
+    background-color:#BEAFC2;
+    padding: 10px;
+    width: 65%;
+    display: inline-block;
+    border-radius: 5px;
+    max-height: 80px;
+    margin-right:10px;
+    opacity: 65%;
+    animation: slideInLeft;
+    animation-duration: 3s;
+}
+
+.close-icon i{
+    font-size:60px;
+    float: left;
+    cursor: pointer;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+.nav-list{
+    list-style-type:none;
+    overflow: hidden;
+    animation: slideInLeft;
+    animation-duration: 3s;
+}
+
+.nav-item a{
+    float: right;
+    display:block;
+    text-align: center;
+    margin-inline: 20px;
+    font-size: 20px;
+    padding: 10px;
+    color:#281C2D;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+.nav-item a:hover{
+    background-color: rgb(0,0,0,0.1);
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+.hide{
+    display: none;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
+.bar-icon{
+    font-size: 60px;
+    display: inline-block;
+    margin-right:10px;
+    color: #BEAFC2;
+    cursor: pointer;
+    animation: backInUp;
+    animation-duration: 3s;
+}
+
