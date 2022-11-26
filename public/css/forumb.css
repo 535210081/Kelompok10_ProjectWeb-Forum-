@@ -109,7 +109,7 @@ html {
 }
 
 body{
-    background-image: url('purple.gif');
+    background-image: url('../purple.gif');
     background-size: cover;
     
     
