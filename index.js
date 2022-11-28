@@ -3,8 +3,9 @@ import mongoose from "mongoose";
 import route from "./routes/index.js";
 import cors from "cors";
 
-const PORT=8080;
+const PORT=8050;
 const app = express();
+//const chalk = require('chalk');
 
 mongoose.connect("mongodb://localhost:27017/restful_db");
 
