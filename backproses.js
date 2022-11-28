@@ -6,33 +6,33 @@
 
 // console.log(window.alert('Selamat datang!'));
 
-var express = require('express')
-const ejs = require('ejs')
+// var express = require('express')
+// const ejs = require('ejs')
 
-var app = express()
-app.use(express.static('public'))
-app.set('view engine', 'ejs')
-app.use(express.urlencoded({ extended: true }))
+// var app = express()
+// app.use(express.static('public'))
+// app.set('view engine', 'ejs')
+// app.use(express.urlencoded({ extended: true }))
 
-const fs  = require('fs')
-const http = require('http')
-const port = 8050;
+// const fs  = require('fs')
+// const http = require('http')
+// const port = 8050;
 
-app.get("/", (req,res)=>{
-    return res.redirect('homepage.html');
-})
+// app.get("/", (req,res)=>{
+//     return res.redirect('homepage.html');
+// })
 
-app.get("/thread", (req,res)=>{
-    return res.redirect('thread.html');
-})
+// app.get("/thread", (req,res)=>{
+//     return res.redirect('thread.html');
+// })
 
-app.listen(port, () => {
-    console.log(chalk.bgBlue('Server is on port 8050'));
-});
+// app.listen(port, () => {
+//     console.log(chalk.bgBlue('Server is on port 8050'));
+// });
 
-const validator = require('validator');
-const chalk = require('chalk');
-const { listenerCount } = require('process');
+// const validator = require('validator');
+// const chalk = require('chalk');
+// const { listenerCount } = require('process');
 
 
 //Root Route

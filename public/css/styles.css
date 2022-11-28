@@ -21,7 +21,7 @@ body::before {
     position: absolute;
     width: 250vw;
     height: 260vh;
-    background-image: url('../gif\ kota2.gif');
+    background-image: url('../Asset/gif\ kota2.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
