@@ -1,0 +1,51 @@
+// Comment User
+GET http://localhost:8080/comment
+
+###
+GET http://localhost:8080/comment/637b322f9331ae5f44b4c1ab
+
+###
+POST http://localhost:8080/comment
+Content-Type: application/json
+
+{
+    "name": "Dony",
+    "comment": "hooh tenan hooh tenan"
+}
+
+###
+PATCH http://localhost:8080/comment/637b322f9331ae5f44b4c1ab
+Content-Type: application/json
+
+{
+    "name": "Dony",
+    "comment": "Amimir Amimir Amimir"
+}
+
+###
+DELETE http://localhost:8080/comment/637b322f9331ae5f44b4c1ab
+
+
+###
+//User
+GET http://localhost:8080/user
+
+###
+POST http://localhost:8080/register
+Content-Type: application/json
+
+{
+    "name": "yowyow",
+    "email": "yowyow@gmail.com",
+    "password": "12345678",
+    "re_password": "12345678"
+}
+
+###
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "email": "turu@gmail.com",
+    "password": "1234"
+}
