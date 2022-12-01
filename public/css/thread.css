@@ -72,7 +72,7 @@ a{
 }
 
 body{
-    background-image: url('../brownbg.gif');
+    background-image: url('../Asset/brownbg.gif');
     background-size: cover;
     height: 100vh;
     padding:0;
