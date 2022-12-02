@@ -109,7 +109,7 @@ html {
 }
 
 body{
-    background-image: url('../blue.gif');
+    background-image: url('../Asset/blue.gif');
     background-size: cover;
     height: 100vh;
     padding:0;
