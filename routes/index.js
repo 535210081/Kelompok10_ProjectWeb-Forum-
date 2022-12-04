@@ -8,8 +8,8 @@ const router = express();
 router.get('/homepage', (req, res) => {
     res.render('pages/homepage')
 });
-router.get('/thread', (req, res) => {
-    res.render('pages/thread').json({msg: 'Discussion'})
+router.get('/thread', authUser,(req, res) => {
+    res.render('pages/thread')
 });
 router.get('/updatepatch', (req, res) => {
     res.render('pages/updatepatch')

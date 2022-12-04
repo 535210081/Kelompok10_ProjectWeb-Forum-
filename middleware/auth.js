@@ -7,17 +7,18 @@ export function authUser(req, res, next){
     console.log(User.username)
     console.log("Authorize User")
 
-    const token = req.headers['Authorization']
+    const token = req.headers.authorization
     console.log(token)
     if (!token) {
-        res.status(401).json({msg: 'Access Denied: Please Login!'})
+        return res.status(401).json({msg: 'Access Denied: Please Login!'})
     } else {
-        const tokenBody = token.slice(7)
-        jwt.verify({tokenBody}, process.env.ACCESS_TOKEN_KEY, (err, decoded) => {
+        const tokenBody = token.split(" ")[1]
+        jwt.verify(tokenBody, process.env.ACCESS_TOKEN_KEY, (err, decoded) => {
             if (err) {
                 return res.status(401).json({msg: 'Token not Verified!'})
             }
             res.json({msg: 'Token Verified!'})
+            req.userID = User.id
             next()
         })
     }

@@ -50,7 +50,7 @@ export const login = async(req, res) => {
     if (!comparePass) {
         return res.json({msg: 'Wrong Password'})
     }
-    const accessToken = jwt.sign({user}, process.env.ACCESS_TOKEN_KEY)
+    const accessToken = jwt.sign({email: user.email, id: user._id}, process.env.ACCESS_TOKEN_KEY)
     res.json({msg: 'Login succesfull!', name: user.name, email: user.email, accessToken: accessToken})
 
 }
