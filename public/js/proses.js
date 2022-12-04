@@ -1,5 +1,8 @@
 let usernameInput = document.getElementById('usernameInput');
 let passwordInput = document.getElementById('passwordInput');
+let usernameInput2 = document.getElementById('usernameInput2');
+let passwordInput2 = document.getElementById('passwordInput2');
+
 const body_blur = document.querySelector('body');
 
 const user = usernameInput.value;
@@ -14,9 +17,9 @@ function register2(){
     localStorage.setItem("username", usernameInput.value);
     
 
-    if(usernameInput.value.trim() == "" || passwordInput.value.trim() == ""){
+    if(usernameInput.value.trim() == "" || passwordInput.value.trim() == "" || usernameInput2.value.trim() == "" || passwordInput2.value.trim() == ""){
         swal({
-        title: "Harus diisi keduanya ya.. :'",
+        title: "Harus diisi ya.. :'",
         icon: "info",
         });
     }
@@ -353,7 +356,44 @@ detail_button_d.addEventListener('click', function(){
     info_area_a.classList.remove('active');
 })
 
+const data = [
+    'aaaaa',
+];
 
+const btnSeacrh = document.getElementById("btnsearch");
+const searchh = document.getElementsByName("keyword")[0];
+const data_section = document.getElementsByClassName("my-element")[0];
 
+//Events
+btnSeacrh.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      searchData();
+    }
+});
 
+function searchData() {
+    const search_value = searchh.value.toLowerCase();
+    const data_filtered = data.slice(0);
 
+    data_section.innerHTML = "";
+    for (let i = 0; i < data_filtered.length; i++){
+        if (data_filtered[i].toLowerCase().includes(search_value)){
+            data_section.innerHTML += "<a href='#'" + data_filtered[i]+"</a>"
+        }
+    }
+}
+
+// function search() {
+//     let input = document.getElementById('btnsearch').value
+//     input=input.toLowerCase();
+//     let x = document.getElementsByClassName('text');
+      
+//     for (i = 0; i < x.length; i++) { 
+//         if (!x[i].innerHTML.toLowerCase().includes(input)) {
+//             x[i].style.display="none";
+//         }
+//         else {
+//             x[i].style.display="list-item";              
+//         }
+//     }
+// }
