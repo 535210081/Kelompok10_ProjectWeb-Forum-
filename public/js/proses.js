@@ -17,7 +17,7 @@ function register2(){
     localStorage.setItem("username", usernameInput.value);
     
 
-    if(usernameInput.value.trim() == "" || passwordInput.value.trim() == "" || passwordInput2.value.trim() == ""){
+    if(usernameInput.value.trim() == "" || passwordInput.value.trim() == ""){
         swal({
         title: "Harus diisi ya.. :'",
         icon: "info",
