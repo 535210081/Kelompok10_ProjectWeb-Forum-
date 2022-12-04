@@ -1,11 +1,11 @@
 // Comment User
-GET http://localhost:8080/comment
+GET http://localhost:8050/comment
 
 ###
-GET http://localhost:8080/comment/637b322f9331ae5f44b4c1ab
+GET http://localhost:8050/comment/637b322f9331ae5f44b4c1ab
 
 ###
-POST http://localhost:8080/comment
+POST http://localhost:8050/comment
 Content-Type: application/json
 
 {
@@ -14,7 +14,7 @@ Content-Type: application/json
 }
 
 ###
-PATCH http://localhost:8080/comment/637b322f9331ae5f44b4c1ab
+PATCH http://localhost:8050/comment/637b322f9331ae5f44b4c1ab
 Content-Type: application/json
 
 {
@@ -23,15 +23,15 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:8080/comment/637b322f9331ae5f44b4c1ab
+DELETE http://localhost:8050/comment/637b322f9331ae5f44b4c1ab
 
 
 ###
 //User
-GET http://localhost:8080/user
+GET http://localhost:8050/user
 
 ###
-POST http://localhost:8080/register
+POST http://localhost:8050/register
 Content-Type: application/json
 
 {
@@ -42,10 +42,13 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:8080/login
+POST http://localhost:8050/login
 Content-Type: application/json
 
 {
-    "email": "abc@gmail.com",
-    "password": "abc"
+    "email": "yowyow@gmail.com",
+    "password": "12345678"
 }
+
+###
+GET http://localhost:8050/thread
