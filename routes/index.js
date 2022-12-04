@@ -8,7 +8,7 @@ const router = express();
 router.get('/homepage', (req, res) => {
     res.render('pages/homepage')
 });
-router.get('/thread', authUser,(req, res) => {
+router.get('/thread', (req, res) => {
     res.render('pages/thread')
 });
 router.get('/updatepatch', (req, res) => {
@@ -636,11 +636,11 @@ router.post('/register', register);
 router.post('/login', login);
 
 //Comment Routing
-router.get('/comment', authUser, getComment);
-router.get('/comment/:id', authUser, getCommentById);
-router.post('/comment', authUser, saveComment);
-router.patch('/comment/:id', authUser, updateComment);
-router.delete('/comment/:id', authUser, deleteComment);
+router.get('/comment', getComment);
+router.get('/comment/:id', getCommentById);
+router.post('/comment',  saveComment);
+router.patch('/comment/:id', updateComment);
+router.delete('/comment/:id', deleteComment);
 
 
 export default router;
