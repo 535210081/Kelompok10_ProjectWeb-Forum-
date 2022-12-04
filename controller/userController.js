@@ -1,6 +1,8 @@
 import User from "../models/user.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
+import dotenv from 'dotenv';
+dotenv.config()
 
 export const getUser = async(req, res) => {
     try {
@@ -48,8 +50,8 @@ export const login = async(req, res) => {
     if (!comparePass) {
         return res.json({msg: 'Wrong Password'})
     }
-
-    res.json({msg: 'Login succesfull!', name: user.name, email: user.email})
+    const accessToken = jwt.sign({user}, process.env.ACCES_TOKEN_KEY)
+    res.json({msg: 'Login succesfull!', name: user.name, email: user.email, accessToken: accessToken})
 
 }
     
