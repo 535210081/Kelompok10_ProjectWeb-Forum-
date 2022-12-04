@@ -52,3 +52,4 @@ Content-Type: application/json
 
 ###
 GET http://localhost:8050/thread
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inlvd3lvd0BnbWFpbC5jb20iLCJpZCI6IjYzN2I4MTNmNmNiNWU4MDQyNzUyODljMiIsImlhdCI6MTY3MDE2ODU2OX0.qFCrl_o2u1xu46AnVqTfovhr00G9f70jlWmTTPCdjdE
