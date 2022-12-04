@@ -29,6 +29,7 @@
 </head>
 
 <body>
+<div class="data">
 <!-- Nav-bar -->
 <header class="my-element" >
   <ul class="nav nav-tabs">
@@ -67,12 +68,12 @@
       <a class="nav-link" href="#creator-part" >About Us</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="thread.ejs">Discussion</a>
+      <a class="nav-link" href="thread">Discussion</a>
     </li>
     <div class="search">
-      <div class="icon"></div>
-      <div class="input">
-        <input type="text">
+      <div class="icon"  ></div>
+      <div class="input" >
+        <input type="text"  id="btnsearch" name="keyword" onkeyup="search()">
       </div>
     </div>
     </div>
@@ -371,7 +372,7 @@
       </div>
     </div>
 </div>
-
+</div>
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
